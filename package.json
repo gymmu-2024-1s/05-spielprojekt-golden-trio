@@ -12,6 +12,12 @@
   },
   "keywords": [],
   "author": "",
+  "contributors": [
+    "Lilly",
+    "Esma",
+    "Ainoa",
+    "Javi"
+  ],
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.0.3",
