@@ -229,6 +229,18 @@
                  "width":32,
                  "x":288,
                  "y":320
+                }, 
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":12,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":391.086007702182,
+                 "y":285.473684210526
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -271,7 +283,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":10,
+ "nextobjectid":13,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
