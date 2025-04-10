@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="10">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="126">
  <editorsettings>
   <export target="../public/assets/maps/map-level-03.json" format="json"/>
  </editorsettings>
@@ -43,28 +43,28 @@
 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,0,8,8,8,
 6,6,6,2,0,0,0,6,2,6,5,5,5,2,2,2,2,2,2,6,6,6,6,2,2,2,6,6,6,2,5,6,6,6,6,6,6,6,5,2,5,2,2,6,10,0,0,0,6,6,
 6,6,2,2,0,0,0,6,2,2,5,2,2,2,6,6,6,6,6,0,0,0,6,6,6,6,6,0,6,2,5,6,6,6,6,5,6,5,2,2,6,6,6,6,10,0,0,0,6,6,
-6,6,2,10,0,0,0,0,6,2,5,5,0,6,6,10,10,0,0,0,0,0,0,0,0,0,0,10,6,6,5,5,6,6,6,6,6,5,2,6,10,10,10,0,0,0,0,6,6,5,
-6,6,2,10,0,0,0,10,6,2,5,5,6,6,6,6,6,6,6,6,6,6,0,0,0,0,0,0,10,6,6,5,6,6,0,6,6,5,2,6,0,0,0,0,0,0,0,6,6,5,
-6,6,2,0,0,0,0,10,0,2,5,6,5,5,5,2,2,2,2,5,5,6,0,0,0,0,0,0,0,10,6,5,5,6,6,6,5,2,2,6,0,0,0,0,0,0,0,2,6,5,
+6,6,2,10,0,0,0,0,6,2,5,5,0,6,6,10,10,0,0,0,0,0,0,0,0,10,0,10,6,6,5,5,6,6,6,6,6,5,2,6,10,10,10,0,0,0,10,6,6,5,
+6,6,2,10,0,0,0,10,6,2,5,5,6,6,6,6,6,6,6,6,6,6,0,0,0,10,0,0,10,6,6,5,6,6,0,6,6,5,2,6,0,0,0,0,10,0,0,6,6,5,
+6,6,2,0,0,0,0,10,0,2,5,6,5,5,5,2,2,2,2,5,5,6,0,0,10,10,0,0,0,10,6,5,5,6,6,6,5,2,2,6,0,0,0,0,0,0,0,2,6,5,
 6,6,2,0,0,0,0,10,6,6,6,6,0,6,6,6,5,5,5,5,2,6,0,0,0,0,0,0,0,6,2,5,5,2,2,6,6,6,6,6,10,0,0,0,0,0,0,0,6,5,
 6,2,2,0,0,0,0,0,6,6,6,6,2,5,5,0,6,6,0,5,2,6,6,0,0,0,0,0,0,6,5,5,5,5,6,6,10,10,0,0,0,0,0,0,0,0,2,6,6,5,
-6,6,2,0,0,0,0,6,6,2,6,5,6,6,5,5,5,0,6,6,2,0,6,0,0,0,0,0,6,2,2,2,5,6,6,10,0,0,0,0,0,0,0,0,0,2,6,6,5,5,
-6,6,2,0,0,0,0,10,0,2,6,6,10,10,6,2,2,5,6,0,5,5,6,0,0,0,0,0,6,2,5,5,5,6,0,0,0,0,0,0,0,0,0,0,0,2,2,6,2,2,
+6,6,2,0,0,0,0,6,6,2,6,5,6,6,5,5,5,0,6,6,2,0,6,0,0,0,0,0,6,2,2,2,5,6,6,10,0,0,0,0,10,0,0,0,0,2,6,6,5,5,
+6,6,2,0,0,0,0,10,0,2,6,6,10,10,6,2,2,5,6,0,5,5,6,0,0,0,0,0,6,2,5,5,5,6,0,0,0,0,0,10,10,0,0,0,0,2,2,6,2,2,
 6,2,2,0,0,0,0,6,2,2,6,6,10,0,10,10,6,5,6,6,5,2,10,10,0,0,0,0,6,2,5,0,5,6,0,0,0,0,0,0,0,0,0,0,0,10,2,6,6,2,
 6,2,10,0,0,0,6,2,2,6,6,6,0,0,0,0,10,6,2,6,5,5,6,0,0,0,0,0,6,5,5,5,5,2,6,6,0,0,0,0,0,0,0,0,0,0,2,2,6,6,
-6,6,10,10,0,6,6,5,0,6,2,2,6,10,0,0,0,10,6,6,0,5,6,10,0,0,0,0,6,2,6,6,5,2,2,6,6,6,6,0,0,0,0,0,0,0,10,2,6,6,
-5,6,10,0,0,6,6,5,5,5,0,2,2,10,0,0,0,6,6,6,6,5,6,10,0,0,0,6,6,2,6,6,6,2,2,2,2,2,6,6,0,0,0,0,0,0,0,2,2,2,
+6,6,10,10,0,6,6,5,0,6,2,2,6,10,0,0,0,10,6,6,0,5,6,10,0,0,0,0,6,2,6,6,5,2,2,6,6,6,6,0,0,0,0,0,10,0,10,2,6,6,
+5,6,10,0,0,6,6,5,5,5,0,2,2,10,0,0,0,6,6,6,6,5,6,10,0,0,0,6,6,2,6,6,6,2,2,2,2,2,6,6,0,0,0,0,10,0,0,2,2,2,
 5,6,10,0,0,0,6,0,2,0,5,2,2,0,0,0,0,6,6,2,6,5,6,0,0,0,0,6,0,6,6,5,5,5,5,5,5,5,2,6,6,0,0,0,0,0,0,2,2,2,
-5,6,2,0,0,0,6,6,5,6,6,2,10,0,0,0,0,0,6,2,6,5,2,0,0,0,6,6,6,5,5,2,2,2,2,2,2,5,2,0,6,0,0,0,0,0,10,2,6,2,
-5,6,10,0,0,0,0,6,2,2,6,2,6,0,0,0,0,0,6,2,6,2,2,0,0,0,6,6,6,5,2,6,6,6,2,2,2,2,6,6,6,0,0,0,0,0,10,2,6,2,
-6,6,10,0,0,0,0,0,6,2,6,5,6,0,0,0,0,0,6,5,6,6,6,0,0,0,6,2,2,5,6,0,0,6,6,6,2,6,6,0,0,0,0,0,0,0,0,2,6,2,
-6,5,2,0,0,0,0,0,6,5,5,5,6,0,0,0,0,0,5,5,2,2,6,0,0,0,2,2,2,5,6,6,0,0,0,6,6,6,0,0,0,0,0,0,0,0,0,2,6,2,
-6,2,10,0,0,0,0,6,6,5,5,2,6,10,0,0,0,0,6,2,2,0,6,0,0,0,2,5,6,5,2,6,6,6,0,0,0,0,0,0,0,0,0,0,0,10,10,2,6,2,
-6,6,10,0,0,0,0,6,2,2,2,2,10,10,0,0,0,0,6,2,2,6,6,0,0,10,5,5,6,6,2,2,6,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,6,2,
+5,6,2,0,0,0,6,6,5,6,6,2,10,0,0,0,0,0,6,2,6,5,2,0,0,0,6,6,6,5,5,2,2,2,2,2,2,5,2,0,6,0,0,0,2,6,10,2,6,2,
+5,6,10,0,0,0,0,6,2,2,6,2,6,0,0,0,0,0,6,2,6,2,2,0,0,0,6,6,6,5,2,6,6,6,2,2,2,2,6,6,6,0,0,2,6,6,10,2,6,2,
+6,6,10,0,0,0,0,0,6,2,6,5,6,0,0,0,0,0,6,5,6,6,6,0,0,0,6,2,2,5,6,0,0,6,6,6,2,6,6,0,0,0,2,6,6,2,0,2,6,2,
+6,5,2,0,0,0,0,0,6,5,5,5,6,0,0,0,0,0,5,5,2,2,6,0,0,0,2,2,2,5,6,6,0,0,0,6,6,6,0,0,10,0,0,0,0,0,0,2,6,2,
+6,2,10,0,0,0,0,6,6,5,5,2,6,10,0,0,10,10,6,2,2,0,6,0,0,0,2,5,6,5,2,6,6,6,0,0,0,0,10,10,0,0,0,0,0,10,10,2,6,2,
+6,6,10,0,0,0,0,6,2,2,2,2,10,10,0,0,0,0,6,2,2,6,6,0,0,10,5,5,6,6,2,2,6,0,0,0,0,0,10,10,0,0,0,0,0,0,2,2,6,2,
 6,5,10,0,0,0,0,6,6,6,2,2,6,0,0,0,0,0,6,2,2,6,6,0,0,10,5,5,5,6,5,2,6,6,0,0,0,0,0,0,0,0,0,0,0,10,2,2,6,2,
-6,5,5,5,10,0,0,0,0,6,6,6,10,0,0,0,0,0,6,6,6,6,0,0,0,6,5,5,5,5,5,2,6,6,0,0,0,0,0,0,0,0,0,0,0,0,2,6,6,2,
-6,6,6,5,10,0,0,0,0,0,0,0,0,0,0,0,0,10,6,6,6,6,0,0,0,6,5,2,2,2,2,2,6,6,0,0,0,0,0,0,0,0,0,0,0,0,2,6,6,2,
-5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,10,0,0,0,0,6,6,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,6,6,
+6,5,5,5,10,0,0,10,0,6,6,6,10,0,10,0,0,0,6,6,6,6,0,0,0,6,5,5,5,5,5,2,6,6,0,0,0,10,0,0,0,0,0,0,0,0,2,6,6,2,
+6,6,6,5,10,0,10,10,0,0,0,0,0,0,0,0,0,10,6,6,6,6,0,0,0,6,5,2,2,2,2,2,6,6,0,10,10,0,0,0,0,0,0,0,0,0,2,6,6,2,
+5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,10,0,0,0,0,6,6,6,6,6,6,6,6,0,0,10,0,0,0,0,0,0,0,2,2,2,2,2,6,6,
 2,6,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,2,6,6,6,6,6,6,
 2,6,5,5,10,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,6,5,5,5,5,5,
 2,6,6,5,10,10,10,10,5,5,5,5,5,5,5,5,0,10,10,10,10,0,10,6,6,6,6,6,6,10,10,10,10,10,0,0,0,0,6,2,2,2,6,6,6,5,5,5,2,2,
@@ -81,8 +81,119 @@
     <property name="damageHp" type="int" value="100"/>
    </properties>
   </object>
-  <object id="6" name="Mushroom" gid="3" x="800.431" y="224.472" width="32" height="32"/>
-  <object id="9" name="FlowerWhite" gid="9" x="161.664" y="188.529" width="32" height="32"/>
+  <object id="6" name="Mushroom" gid="3" x="703.098" y="220.472" width="32" height="32"/>
+  <object id="115" name="Mushroom" gid="3" x="734.431" y="126.472" width="32" height="32"/>
+  <object id="116" name="Mushroom" gid="3" x="895.765" y="252.472" width="32" height="32"/>
+  <object id="99" name="Mushroom" gid="3" x="195.098" y="287.806" width="32" height="32"/>
+  <object id="102" name="Mushroom" gid="3" x="194.431" y="607.139" width="32" height="32"/>
+  <object id="103" name="Mushroom" gid="3" x="94.4313" y="638.472" width="32" height="32"/>
+  <object id="104" name="Mushroom" gid="3" x="193.098" y="701.806" width="32" height="32"/>
+  <object id="105" name="Mushroom" gid="3" x="193.098" y="861.806" width="32" height="32"/>
+  <object id="106" name="Mushroom" gid="3" x="319.765" y="865.139" width="32" height="32"/>
+  <object id="107" name="Mushroom" gid="3" x="352.431" y="768.472" width="32" height="32"/>
+  <object id="108" name="Mushroom" gid="3" x="481.765" y="862.472" width="32" height="32"/>
+  <object id="109" name="Mushroom" gid="3" x="546.431" y="574.472" width="32" height="32"/>
+  <object id="112" name="Mushroom" gid="3" x="575.765" y="830.472" width="32" height="32"/>
+  <object id="113" name="Mushroom" gid="3" x="703.765" y="735.806" width="32" height="32"/>
+  <object id="117" name="Mushroom" gid="3" x="989.098" y="830.472" width="32" height="32"/>
+  <object id="118" name="Mushroom" gid="3" x="1087.76" y="607.806" width="32" height="32"/>
+  <object id="119" name="Mushroom" gid="3" x="1309.76" y="511.139" width="32" height="32"/>
+  <object id="120" name="Mushroom" gid="3" x="1215.76" y="285.806" width="32" height="32"/>
+  <object id="121" name="Mushroom" gid="3" x="1212.43" y="384.472" width="32" height="32"/>
+  <object id="122" name="Mushroom" gid="3" x="1406.43" y="318.472" width="32" height="32"/>
+  <object id="123" name="Mushroom" gid="3" x="1373.1" y="127.139" width="32" height="32"/>
+  <object id="124" name="Mushroom" gid="3" x="1471.1" y="221.806" width="32" height="32"/>
+  <object id="125" name="Mushroom" gid="3" x="1279.1" y="253.806" width="32" height="32"/>
+  <object id="114" name="Mushroom" gid="3" x="869.765" y="380.472" width="32" height="32"/>
+  <object id="111" name="Mushroom" gid="3" x="413.765" y="383.806" width="32" height="32"/>
+  <object id="110" name="Mushroom" gid="3" x="415.098" y="513.139" width="32" height="32"/>
+  <object id="101" name="Mushroom" gid="3" x="94.4313" y="510.472" width="32" height="32"/>
+  <object id="100" name="Mushroom" gid="3" x="98.4313" y="223.806" width="32" height="32"/>
+  <object id="9" name="FlowerWhite" gid="9" x="97.6637" y="190.529" width="32" height="32"/>
+  <object id="10" name="FlowerWhite" gid="9" x="224.997" y="253.862" width="32" height="32"/>
+  <object id="11" name="FlowerWhite" gid="9" x="512.33" y="415.196" width="32" height="32"/>
+  <object id="16" name="FlowerWhite" gid="9" x="544.997" y="127.196" width="32" height="32"/>
+  <object id="12" name="FlowerWhite" gid="9" x="226.997" y="607.196" width="32" height="32"/>
+  <object id="15" name="FlowerWhite" gid="9" x="674.33" y="95.8622" width="32" height="32"/>
+  <object id="13" name="FlowerWhite" gid="9" x="605.664" y="799.862" width="32" height="32"/>
+  <object id="21" name="FlowerWhite" gid="9" x="991.664" y="575.862" width="32" height="32"/>
+  <object id="19" name="FlowerWhite" gid="9" x="1089.66" y="351.862" width="32" height="32"/>
+  <object id="22" name="FlowerWhite" gid="9" x="1280.33" y="159.196" width="32" height="32"/>
+  <object id="23" name="FlowerWhite" gid="9" x="1507" y="221.862" width="32" height="32"/>
+  <object id="24" name="FlowerWhite" gid="9" x="1473" y="605.196" width="32" height="32"/>
+  <object id="26" name="FlowerWhite" gid="9" x="1441" y="767.862" width="32" height="32"/>
+  <object id="25" name="FlowerWhite" gid="9" x="1086.33" y="899.196" width="32" height="32"/>
+  <object id="20" name="FlowerWhite" gid="9" x="991.664" y="575.862" width="32" height="32"/>
+  <object id="18" name="FlowerWhite" gid="9" x="672.33" y="897.196" width="32" height="32"/>
+  <object id="17" name="FlowerWhite" gid="9" x="871.664" y="415.862" width="32" height="32"/>
+  <object id="14" name="FlowerWhite" gid="9" x="386.33" y="384.529" width="32" height="32"/>
+  <object id="27" name="FlowerPurple" gid="12" x="1217.33" y="607.333" width="32" height="32"/>
+  <object id="31" name="FlowerPurple" gid="12" x="1088.67" y="706.667" width="32" height="32"/>
+  <object id="41" name="FlowerPurple" gid="12" x="830.667" y="830.667" width="32" height="32"/>
+  <object id="42" name="FlowerPurple" gid="12" x="514" y="737.333" width="32" height="32"/>
+  <object id="53" name="FlowerPurple" gid="12" x="256" y="735.333" width="32" height="32"/>
+  <object id="56" name="FlowerPurple" gid="12" x="131.333" y="480" width="32" height="32"/>
+  <object id="59" name="FlowerPurple" gid="12" x="192" y="127.333" width="32" height="32"/>
+  <object id="58" name="FlowerPurple" gid="12" x="192" y="352" width="32" height="32"/>
+  <object id="57" name="FlowerPurple" gid="12" x="94" y="290" width="32" height="32"/>
+  <object id="55" name="FlowerPurple" gid="12" x="100" y="705.333" width="32" height="32"/>
+  <object id="52" name="FlowerPurple" gid="12" x="388.667" y="769.333" width="32" height="32"/>
+  <object id="54" name="FlowerPurple" gid="12" x="162" y="864.667" width="32" height="32"/>
+  <object id="51" name="FlowerPurple" gid="12" x="735.333" y="672" width="32" height="32"/>
+  <object id="49" name="FlowerPurple" gid="12" x="447.333" y="608" width="32" height="32"/>
+  <object id="50" name="FlowerPurple" gid="12" x="513.333" y="481.333" width="32" height="32"/>
+  <object id="48" name="FlowerPurple" gid="12" x="482.667" y="384" width="32" height="32"/>
+  <object id="43" name="FlowerPurple" gid="12" x="736" y="480" width="32" height="32"/>
+  <object id="44" name="FlowerPurple" gid="12" x="866" y="256.667" width="32" height="32"/>
+  <object id="45" name="FlowerPurple" gid="12" x="704" y="192" width="32" height="32"/>
+  <object id="47" name="FlowerPurple" gid="12" x="606.667" y="95.3333" width="32" height="32"/>
+  <object id="46" name="FlowerPurple" gid="12" x="830.667" y="127.333" width="32" height="32"/>
+  <object id="40" name="FlowerPurple" gid="12" x="1344" y="801.333" width="32" height="32"/>
+  <object id="39" name="FlowerPurple" gid="12" x="1185.33" y="896.667" width="32" height="32"/>
+  <object id="32" name="FlowerPurple" gid="12" x="1280.67" y="416" width="32" height="32"/>
+  <object id="34" name="FlowerPurple" gid="12" x="1408" y="288.667" width="32" height="32"/>
+  <object id="38" name="FlowerPurple" gid="12" x="1506" y="94.6667" width="32" height="32"/>
+  <object id="36" name="FlowerPurple" gid="12" x="1408" y="288.667" width="32" height="32"/>
+  <object id="37" name="FlowerPurple" gid="12" x="1506" y="94.6667" width="32" height="32"/>
+  <object id="35" name="FlowerPurple" gid="12" x="1408.67" y="125.333" width="32" height="32"/>
+  <object id="33" name="FlowerPurple" gid="12" x="1314" y="224.667" width="32" height="32"/>
+  <object id="28" name="FlowerPurple" gid="12" x="1441.33" y="672.667" width="32" height="32"/>
+  <object id="60" name="Sunflower" gid="11" x="128.667" y="160" width="32" height="32"/>
+  <object id="61" name="Sunflower" gid="11" x="290.667" y="867.333" width="32" height="32"/>
+  <object id="62" name="Sunflower" gid="11" x="547.333" y="510.667" width="32" height="32"/>
+  <object id="63" name="Sunflower" gid="11" x="866" y="321.333" width="32" height="32"/>
+  <object id="64" name="Sunflower" gid="11" x="1090" y="770" width="32" height="32"/>
+  <object id="65" name="Sunflower" gid="11" x="1215.33" y="258.667" width="32" height="32"/>
+  <object id="66" name="Flower" gid="4" x="91.3333" y="356" width="32" height="32"/>
+  <object id="70" name="Flower" gid="4" x="186.667" y="197.333" width="32" height="32"/>
+  <object id="71" name="Flower" gid="4" x="92" y="578" width="32" height="32"/>
+  <object id="73" name="Flower" gid="4" x="120" y="802" width="32" height="32"/>
+  <object id="74" name="Flower" gid="4" x="282.667" y="772" width="32" height="32"/>
+  <object id="75" name="Flower" gid="4" x="376" y="866.667" width="32" height="32"/>
+  <object id="76" name="Flower" gid="4" x="505.333" y="899.333" width="32" height="32"/>
+  <object id="77" name="Flower" gid="4" x="537.333" y="742" width="32" height="32"/>
+  <object id="81" name="Flower" gid="4" x="734.667" y="868" width="32" height="32"/>
+  <object id="82" name="Flower" gid="4" x="795.333" y="645.333" width="32" height="32"/>
+  <object id="87" name="Flower" gid="4" x="890" y="836" width="32" height="32"/>
+  <object id="88" name="Flower" gid="4" x="1049.33" y="804" width="32" height="32"/>
+  <object id="89" name="Flower" gid="4" x="1147.33" y="898" width="32" height="32"/>
+  <object id="90" name="Flower" gid="4" x="1276.67" y="836.667" width="32" height="32"/>
+  <object id="91" name="Flower" gid="4" x="1018" y="575.333" width="32" height="32"/>
+  <object id="92" name="Flower" gid="4" x="1178.67" y="641.333" width="32" height="32"/>
+  <object id="93" name="Flower" gid="4" x="1465.33" y="482" width="32" height="32"/>
+  <object id="94" name="Flower" gid="4" x="1147.33" y="384" width="32" height="32"/>
+  <object id="95" name="Flower" gid="4" x="1148.67" y="290.667" width="32" height="32"/>
+  <object id="96" name="Flower" gid="4" x="1306.67" y="162.667" width="32" height="32"/>
+  <object id="97" name="Flower" gid="4" x="1436" y="226.667" width="32" height="32"/>
+  <object id="98" name="Flower" gid="4" x="1436.67" y="384.667" width="32" height="32"/>
+  <object id="83" name="Flower" gid="4" x="728.667" y="511.333" width="32" height="32"/>
+  <object id="84" name="Flower" gid="4" x="728" y="321.333" width="32" height="32"/>
+  <object id="85" name="Flower" gid="4" x="858" y="162.667" width="32" height="32"/>
+  <object id="86" name="Flower" gid="4" x="638.667" y="97.3333" width="32" height="32"/>
+  <object id="78" name="Flower" gid="4" x="410" y="485.333" width="32" height="32"/>
+  <object id="80" name="Flower" gid="4" x="416.667" y="354" width="32" height="32"/>
+  <object id="79" name="Flower" gid="4" x="409.333" y="610.667" width="32" height="32"/>
+  <object id="72" name="Flower" gid="4" x="191.333" y="548" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="2" name="Cave" gid="7" x="1472" y="32" width="32" height="32">
