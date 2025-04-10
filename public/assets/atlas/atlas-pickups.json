@@ -15,6 +15,10 @@
     {
       "filename": "flowerwhite",
       "frame": { "x": 1, "y": 66, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "sunflower",
+      "frame": { "x": 69, "y": 69, "w": 32, "h": 32 }
     }
   ]
 }

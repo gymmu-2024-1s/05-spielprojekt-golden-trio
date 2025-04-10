@@ -17,7 +17,7 @@
             1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
             1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
             1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
          "height":15,
          "id":1,
          "name":"Background",
@@ -43,7 +43,7 @@
             2, 0, 0, 10, 5, 5, 6, 6, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 10, 6,
             2, 0, 0, 5, 6, 6, 6, 6, 6, 5, 5, 10, 5, 6, 6, 6, 0, 0, 0, 6,
             6, 0, 6, 2, 2, 5, 6, 6, 6, 6, 6, 6, 6, 2, 2, 5, 10, 0, 5, 6,
-            6, 0, 6, 6, 2, 5, 5, 6, 2, 6, 2, 2, 2, 2, 2, 6, 6, 6, 6, 6],
+            6, 6, 6, 6, 2, 5, 5, 6, 2, 6, 2, 2, 2, 2, 2, 6, 6, 6, 6, 6],
          "height":15,
          "id":2,
          "name":"Obstacles",
@@ -96,8 +96,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":540.836970474968,
-                 "y":190.644415917843
+                 "x":540.837,
+                 "y":190.644
                 }, 
                 {
                  "gid":3,
@@ -114,8 +114,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":577.396662387677,
-                 "y":414.890885750963
+                 "x":577.397,
+                 "y":414.891
                 }, 
                 {
                  "gid":3,
@@ -132,8 +132,26 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":412.713735558408,
-                 "y":255.507060333761
+                 "x":412.714,
+                 "y":255.507
+                }, 
+                {
+                 "gid":3,
+                 "height":32,
+                 "id":43,
+                 "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":20
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":417.380666666667,
+                 "y":380.840333333333
                 }, 
                 {
                  "gid":3,
@@ -168,8 +186,26 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":347.440308087291,
-                 "y":99.2862644415918
+                 "x":347.44,
+                 "y":99.2863
+                }, 
+                {
+                 "gid":4,
+                 "height":32,
+                 "id":41,
+                 "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":26.7733333333333,
+                 "y":163.952966666667
                 }, 
                 {
                  "gid":4,
@@ -240,8 +276,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":320.780487804878,
-                 "y":225.602053915276
+                 "x":320.78,
+                 "y":225.602
                 }, 
                 {
                  "gid":4,
@@ -262,16 +298,167 @@
                  "y":288
                 }, 
                 {
-                 "gid":12,
+                 "gid":4,
                  "height":32,
-                 "id":24,
-                 "name":"",
+                 "id":44,
+                 "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":10
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":725.463414634146,
-                 "y":409.940949935815
+                 "x":192,
+                 "y":195.333333333333
+                }, 
+                {
+                 "gid":9,
+                 "height":32,
+                 "id":25,
+                 "name":"FlowerWhite",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":32,
+                 "y":94
+                }, 
+                {
+                 "gid":9,
+                 "height":32,
+                 "id":26,
+                 "name":"FlowerWhite",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":544.666666666667,
+                 "y":444
+                }, 
+                {
+                 "gid":9,
+                 "height":32,
+                 "id":27,
+                 "name":"FlowerWhite",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":318.666666666667,
+                 "y":160
+                }, 
+                {
+                 "gid":9,
+                 "height":32,
+                 "id":28,
+                 "name":"FlowerWhite",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":544.666666666667,
+                 "y":252.666666666667
+                }, 
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":32,
+                 "name":"Sunflower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":64.6666666666667,
+                 "y":287.333333333333
+                }, 
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":34,
+                 "name":"Sunflower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":446.666666666667,
+                 "y":258
+                }, 
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":36,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":257.333333333333,
+                 "y":384.666666666667
+                },
+            
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":42,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":258.666666666667,
+                 "y":256
+                }, 
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":37,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":516,
+                 "y":354
+                }, 
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":38,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":516,
+                 "y":354
+                }, 
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":40,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":97.3333333333334,
+                 "y":126
+                }, 
+                {
+                 "gid":12,
+                 "height":32,
+                 "id":39,
+                 "name":"FlowerPurple",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":510.666666666667,
+                 "y":222.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -309,7 +496,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":25,
+ "nextobjectid":45,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -356,6 +543,15 @@
                 }, 
                 {
                  "id":7,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":9,
                  "properties":[
                         {
                          "name":"collides",
