@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="6">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="10">
+ <editorsettings>
+  <export target="../public/assets/maps/map-level-03.json" format="json"/>
+ </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
  <layer id="1" name="Background" width="50" height="30">
   <data encoding="csv">
@@ -78,6 +81,8 @@
     <property name="damageHp" type="int" value="100"/>
    </properties>
   </object>
+  <object id="6" name="Mushroom" gid="3" x="800.431" y="224.472" width="32" height="32"/>
+  <object id="9" name="FlowerWhite" gid="9" x="161.664" y="188.529" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="2" name="Cave" gid="7" x="1472" y="32" width="32" height="32">

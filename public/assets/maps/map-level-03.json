@@ -128,6 +128,30 @@
                  "width":32,
                  "x":1504,
                  "y":64
+                }, 
+                {
+                 "gid":3,
+                 "height":32,
+                 "id":6,
+                 "name":"Mushroom",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":800.431322207959,
+                 "y":224.472400513479
+                }, 
+                {
+                 "gid":9,
+                 "height":32,
+                 "id":9,
+                 "name":"FlowerWhite",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":161.663671373556,
+                 "y":188.528883183569
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -165,7 +189,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":6,
+ "nextobjectid":10,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

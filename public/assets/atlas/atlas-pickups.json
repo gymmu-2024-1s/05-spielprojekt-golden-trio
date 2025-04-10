@@ -11,6 +11,10 @@
     {
       "filename": "flowerpurple",
       "frame": { "x": 103, "y": 66, "w": 32, "h": 32 }
+    },
+    {
+      "filename": "flowerwhite",
+      "frame": { "x": 1, "y": 66, "w": 32, "h": 32 }
     }
   ]
 }

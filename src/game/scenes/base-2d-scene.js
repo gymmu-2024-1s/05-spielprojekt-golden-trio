@@ -5,6 +5,7 @@ import Cave from "../gameObjects/doors/cave"
 import Player from "../gameObjects/player/player"
 import NPC from "../gameObjects/player/npc"
 import Flowerpurple from "../gameObjects/pickups/flowerpurple"
+import FlowerWhite from "../gameObjects/pickups/flowerwhite"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -106,6 +107,13 @@ export default class Base2DScene extends Phaser.Scene {
       "Items",
       "FlowerPurple",
       Flowerpurple,
+      this.items,
+    )
+    this.createObjects(
+      this.map,
+      "Items",
+      "FlowerWhite",
+      FlowerWhite,
       this.items,
     )
   }
