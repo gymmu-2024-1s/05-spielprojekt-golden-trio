@@ -4,6 +4,10 @@ import Flower from "../gameObjects/pickups/flower"
 import Cave from "../gameObjects/doors/cave"
 import Player from "../gameObjects/player/player"
 import NPC from "../gameObjects/player/npc"
+import Flowerpurple from "../gameObjects/pickups/flowerpurple"
+import FlowerWhite from "../gameObjects/pickups/flowerwhite"
+import sunflower from "../gameObjects/pickups/sunflower"
+import Sunflower from "../gameObjects/pickups/sunflower"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -100,6 +104,21 @@ export default class Base2DScene extends Phaser.Scene {
   createMapObjects() {
     this.createObjects(this.map, "Items", "Mushroom", Mushroom, this.items)
     this.createObjects(this.map, "Items", "Flower", Flower, this.items)
+    this.createObjects(
+      this.map,
+      "Items",
+      "FlowerPurple",
+      Flowerpurple,
+      this.items,
+    )
+    this.createObjects(
+      this.map,
+      "Items",
+      "FlowerWhite",
+      FlowerWhite,
+      this.items,
+    )
+    this.createObjects(this.map, "Items", "Sunflower", Sunflower, this.items)
   }
 
   createCamera() {
