@@ -5,7 +5,7 @@ export default class Flowerpurple extends StaticObject {
     super(scene, x, y, "pickups", "flowerpurple", properties)
 
     this.setOrigin(0, 0)
-    this.setSize(24, 32)
-    this.setOffset(8, 0)
+    this.setSize(24, 24)
+    this.setOffset(4, 8)
   }
 }

@@ -119,7 +119,7 @@
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
-  <object id="12" name="FlowerPurple" gid="12" x="511.856" y="510.296" width="32" height="32"/>
+  <object id="12" name="FlowerPurple" gid="12" x="511.856" y="510.296" width="32" height="30.0909"/>
   <object id="16" name="FlowerPurple" gid="12" x="836.375" y="477.022" width="32" height="32"/>
   <object id="30" name="FlowerWhite" gid="9" x="479.5" y="477" width="32" height="32"/>
  </objectgroup>
