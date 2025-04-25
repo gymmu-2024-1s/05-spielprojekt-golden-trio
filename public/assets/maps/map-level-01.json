@@ -329,8 +329,20 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":545.333333333333,
-                 "y":449.666666666667
+                 "x":545.333,
+                 "y":449.667
+                }, 
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":34,
+                 "name":"Sunflower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":736.333333333333,
+                 "y":510.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -373,7 +385,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":34,
+ "nextobjectid":35,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

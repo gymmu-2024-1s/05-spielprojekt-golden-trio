@@ -27,6 +27,9 @@ export default class UIScene extends Phaser.Scene {
   }
 
   updateHp(value) {
+    if (value === undefined) {
+      value = 100
+    }
     this.hpValue = value
     this.hpElement.setText(`HP: ${this.hpValue}`)
   }

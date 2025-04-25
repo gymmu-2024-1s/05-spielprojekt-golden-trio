@@ -3,7 +3,7 @@ import EVENTS from "../../events"
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
-  hp = 10
+  hp = 100
   maxHp = 100
   speed = 100
 
@@ -98,7 +98,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (value == null) value = 0
     this.hp = this.hp + value
     if (this.hp > this.maxHp) {
-      this.hp = this.mapHp
+      this.hp = this.maxHp
     }
 
     // Die Lebenspunkte des Spielers wurden verändert, also schicken wir das
