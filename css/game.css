@@ -19,13 +19,11 @@ h1 {
   text-shadow: 2px 2px #ffffffaa;
 }
 
-#game-container {
-  width: 90%;
-  max-width: 800px;
-  height: 500px;
-  background-color: #ffffff;
-  border: 5px solid #ffc0cb;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.start-btn {
+  padding: 1.5rem;
+  background-color: rgb(206, 124, 202);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
