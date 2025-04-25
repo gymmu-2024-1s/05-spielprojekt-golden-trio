@@ -3,6 +3,7 @@ import Flowerpurple from "../../gameObjects/pickups/flowerpurple"
 import Mushroom from "../../gameObjects/pickups/mushroom"
 import Sunflower from "../../gameObjects/pickups/sunflower"
 import Base2DScene from "../base-2d-scene"
+import key from "../../gameObjects/pickups/key"
 
 export default class Level01 extends Base2DScene {
   constructor() {
@@ -59,7 +60,6 @@ export default class Level01 extends Base2DScene {
       // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
       this.player.damage(item.props.damageHp || 0)
-      this.player.addKey("level-02")
 
       // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
       // passieren soll.
@@ -76,6 +76,9 @@ export default class Level01 extends Base2DScene {
       //     this.player.setScale(val)
       //   },
       // })
+    }
+    if (item instanceof key) {
+      this.player.addKey("level-02")
     }
   }
 }

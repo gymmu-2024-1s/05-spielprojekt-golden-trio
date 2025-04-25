@@ -8,6 +8,7 @@ import Flowerpurple from "../gameObjects/pickups/flowerpurple"
 import FlowerWhite from "../gameObjects/pickups/flowerwhite"
 import sunflower from "../gameObjects/pickups/sunflower"
 import Sunflower from "../gameObjects/pickups/sunflower"
+import key from "../gameObjects/pickups/key"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -119,6 +120,7 @@ export default class Base2DScene extends Phaser.Scene {
       this.items,
     )
     this.createObjects(this.map, "Items", "Sunflower", Sunflower, this.items)
+    this.createObjects(this.map, "Items", "Key", key, this.items)
   }
 
   createCamera() {

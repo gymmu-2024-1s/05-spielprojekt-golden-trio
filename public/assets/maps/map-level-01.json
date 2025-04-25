@@ -286,7 +286,7 @@
                 }, 
                 {
                  "gid":12,
-                 "height":30.0909090909091,
+                 "height":30.0909,
                  "id":12,
                  "name":"FlowerPurple",
                  "rotation":0,
@@ -319,6 +319,18 @@
                  "width":32,
                  "x":479.5,
                  "y":477
+                }, 
+                {
+                 "gid":13,
+                 "height":32,
+                 "id":33,
+                 "name":"Key",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":545.333333333333,
+                 "y":449.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -361,7 +373,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":33,
+ "nextobjectid":34,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -371,12 +383,12 @@
          "columns":4,
          "firstgid":1,
          "image":"..\/tileset.png",
-         "imageheight":102,
+         "imageheight":136,
          "imagewidth":136,
          "margin":1,
          "name":"tileset",
          "spacing":2,
-         "tilecount":12,
+         "tilecount":16,
          "tileheight":32,
          "tiles":[
                 {
