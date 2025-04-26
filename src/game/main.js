@@ -6,6 +6,7 @@ import Level02 from "./scenes/levels/level-02.js"
 import Level03 from "./scenes/levels/level-03.js"
 import Level04 from "./scenes/levels/level-04.js"
 import Level05 from "./scenes/levels/level-05.js"
+import gamecomplete from "./scenes/gamecomplete.js"
 import UIScene from "./scenes/ui-scene.js"
 import DebugScene from "./scenes/debug-scene.js"
 
@@ -23,6 +24,7 @@ const config = {
     UIScene,
     DebugScene,
     Level01,
+    gamecomplete,
     Level02,
     Level03,
     Level04,

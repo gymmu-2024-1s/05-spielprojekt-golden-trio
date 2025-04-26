@@ -6,7 +6,6 @@ import Player from "../gameObjects/player/player"
 import NPC from "../gameObjects/player/npc"
 import Flowerpurple from "../gameObjects/pickups/flowerpurple"
 import FlowerWhite from "../gameObjects/pickups/flowerwhite"
-import sunflower from "../gameObjects/pickups/sunflower"
 import Sunflower from "../gameObjects/pickups/sunflower"
 import key from "../gameObjects/pickups/key"
 

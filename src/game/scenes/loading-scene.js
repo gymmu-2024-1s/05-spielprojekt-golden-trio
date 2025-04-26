@@ -1,4 +1,6 @@
 import Phaser from "phaser"
+import Level05 from "./levels/level-05"
+import Level01 from "./levels/level-01"
 /**
  * Spiellogik für das Level02.
  */
@@ -48,12 +50,6 @@ export default class LoadingScene extends Phaser.Scene {
     this.add
       .text(320, 240, "Press SPACE to start the Game.")
       .setOrigin(0.5, 0.5)
-  }
-
-  create1() {
-    this.createAnimations()
-
-    this.add.text(320, 240, "Restart the Game.").setOrigin(0.5, 0.5)
   }
 
   update() {

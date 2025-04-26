@@ -128,8 +128,8 @@
  <objectgroup id="5" name="Doors">
   <object id="7" name="Cave" gid="7" x="736" y="416" width="32" height="32">
    <properties>
-    <property name="goToWorld" value="level-02"/>
-    <property name="needKey" value="level-02"/>
+    <property name="goToWorld" value="gamecomplete"/>
+    <property name="needKey" value="gamecomplete"/>
    </properties>
   </object>
  </objectgroup>
