@@ -54,6 +54,9 @@ export default class Level01 extends Base2DScene {
           // const val = tween.getValue()
           //this.player.setScale(val)
         },
+        onComplete: () => {
+          this.player.decreaseSpeed(100)
+        },
       })
     }
     if (item instanceof Flowerpurple) {

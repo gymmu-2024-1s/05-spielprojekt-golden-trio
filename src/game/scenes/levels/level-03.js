@@ -3,6 +3,7 @@ import Flower from "../../gameObjects/pickups/flower"
 import Flowerpurple from "../../gameObjects/pickups/flowerpurple"
 import Mushroom from "../../gameObjects/pickups/mushroom"
 import Sunflower from "../../gameObjects/pickups/sunflower"
+import key from "../../gameObjects/pickups/key"
 
 /**
  * Spiellogik für das Level03.
@@ -66,7 +67,6 @@ export default class Level03 extends Base2DScene {
       // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
       this.player.damage(item.props.damageHp || 0)
-      this.player.addKey("level-04")
 
       // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
       // passieren soll.
@@ -83,6 +83,9 @@ export default class Level03 extends Base2DScene {
       //     this.player.setScale(val)
       //   },
       // })
+    }
+    if (item instanceof key) {
+      this.player.addKey("level-04")
     }
   }
 }

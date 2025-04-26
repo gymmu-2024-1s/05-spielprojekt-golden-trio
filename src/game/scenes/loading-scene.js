@@ -54,7 +54,7 @@ export default class LoadingScene extends Phaser.Scene {
 
   update() {
     if (this.SPACE.isDown) {
-      this.scene.start("level-01")
+      this.scene.start("level-04")
     }
   }
 
