@@ -59,6 +59,7 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
+    this.scene.bringToTop("points-scene")
   }
 
   /**

@@ -9,6 +9,7 @@ import Level05 from "./scenes/levels/level-05.js"
 import gamecomplete from "./scenes/gamecomplete.js"
 import UIScene from "./scenes/ui-scene.js"
 import DebugScene from "./scenes/debug-scene.js"
+import pointsscene from "./scenes/points-scene.js"
 
 const config = {
   type: Phaser.AUTO,
@@ -23,6 +24,7 @@ const config = {
     LoadingScene,
     UIScene,
     DebugScene,
+    pointsscene,
     Level01,
     gamecomplete,
     Level02,

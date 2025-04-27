@@ -1,4 +1,4 @@
-.columns {
+columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -13,6 +13,12 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.large-image {
+  width: 120%;
+  max-width: 500px;
+  border-radius: 12px;
 }
 
 main {

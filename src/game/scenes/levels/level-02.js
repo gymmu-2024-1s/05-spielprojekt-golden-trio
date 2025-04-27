@@ -5,6 +5,7 @@ import Flowerpurple from "../../gameObjects/pickups/flowerpurple"
 import Mushroom from "../../gameObjects/pickups/mushroom"
 import Sunflower from "../../gameObjects/pickups/sunflower"
 import key from "../../gameObjects/pickups/key"
+import FlowerWhite from "../../gameObjects/pickups/flowerwhite"
 
 /**
  * Spiellogik für das Level02.
@@ -87,6 +88,9 @@ export default class Level02 extends Base2DScene {
     }
     if (item instanceof key) {
       this.player.addKey("level-03")
+    }
+    if (item instanceof FlowerWhite) {
+      this.player.updatepoint(item.props.points || 10)
     }
   }
 }

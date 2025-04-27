@@ -1,11 +1,13 @@
 import Phaser from "phaser"
 import EVENTS from "../../events"
+import { pointsGlobal, setPointsGlobal } from "../../globals.js"
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
   hp = 100
   maxHp = 100
   speed = 100
+  points = 0
 
   constructor(scene, x, y) {
     super(scene, x, y, "player")
@@ -17,11 +19,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.setOffset(4, 8)
 
     this.setControls()
+    this.refreshBody
+
+    if (pointsGlobal > 0) {
+      this.points = pointsGlobal
+    }
 
     // Hier schicken wir ein Ereignis los. Phaser schnappt das auf, und führt
     // die Funktion aus, die beim Emitter von "update-hp" definiert wurde. So
     // können wir bequem über verschiedene Objekte kommunizieren.
     EVENTS.emit("update-hp", this.hp)
+    EVENTS.emit("update-points", this.points)
   }
 
   /**
@@ -33,6 +41,36 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
    */
   increaseSpeed(value) {
     this.speed = Math.min(this.speed + value, 960)
+  }
+
+  updatepoint(value) {
+    if (value == null) value = 0
+    this.points = this.points + value
+    setPointsGlobal(this.points)
+    EVENTS.emit("update-points", this.points)
+  }
+
+  /**
+   * Heile den Spieler.
+   *
+   * Der Spieler wird um die angegebene Menge an HP geheilt. Das Maximum der
+   * Lebenspunkte kann nicht überstiegen werden.
+   *
+   * @param {integer} value Die Menge an Lebenspunkten um die der Spieler
+   * geheilt wird.
+   */
+  heal(value) {
+    if (value == null) value = 0
+    this.hp = this.hp + value
+    if (this.hp > this.maxHp) {
+      this.hp = this.maxHp
+    }
+
+    // Die Lebenspunkte des Spielers wurden verändert, also schicken wir das
+    // Ereignis "update-hp" los. Das wird von einer anderen Szene aufgeschnappt,
+    // und die Lebenspunkte werden angepasst. So können wir einfach mit einer
+    // anderen Szene kommunizieren, ohne das wir diese kennen müssen.
+    EVENTS.emit("update-hp", this.hp)
   }
 
   /**
@@ -83,29 +121,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (isIdle) {
       this.anims.play("player_idle", true)
     }
-  }
-
-  /**
-   * Heile den Spieler.
-   *
-   * Der Spieler wird um die angegebene Menge an HP geheilt. Das Maximum der
-   * Lebenspunkte kann nicht überstiegen werden.
-   *
-   * @param {integer} value Die Menge an Lebenspunkten um die der Spieler
-   * geheilt wird.
-   */
-  heal(value) {
-    if (value == null) value = 0
-    this.hp = this.hp + value
-    if (this.hp > this.maxHp) {
-      this.hp = this.maxHp
-    }
-
-    // Die Lebenspunkte des Spielers wurden verändert, also schicken wir das
-    // Ereignis "update-hp" los. Das wird von einer anderen Szene aufgeschnappt,
-    // und die Lebenspunkte werden angepasst. So können wir einfach mit einer
-    // anderen Szene kommunizieren, ohne das wir diese kennen müssen.
-    EVENTS.emit("update-hp", this.hp)
   }
 
   /**

@@ -33,4 +33,13 @@ export default class UIScene extends Phaser.Scene {
     this.hpValue = value
     this.hpElement.setText(`HP: ${this.hpValue}`)
   }
+  /*
+  updatePoints(value) {
+    if (value === undefined) {
+      value = 0
+    }
+    this.pointsvalue = value
+    this.pointselement.setText(`Punkte: ${this.pointsvalue}`)
+  }
+    */
 }

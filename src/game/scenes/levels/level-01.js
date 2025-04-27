@@ -4,6 +4,7 @@ import Mushroom from "../../gameObjects/pickups/mushroom"
 import Sunflower from "../../gameObjects/pickups/sunflower"
 import Base2DScene from "../base-2d-scene"
 import key from "../../gameObjects/pickups/key"
+import FlowerWhite from "../../gameObjects/pickups/flowerwhite"
 
 export default class Level01 extends Base2DScene {
   constructor() {
@@ -82,6 +83,10 @@ export default class Level01 extends Base2DScene {
     }
     if (item instanceof key) {
       this.player.addKey("level-02")
+    }
+
+    if (item instanceof FlowerWhite) {
+      this.player.updatepoint(item.props.points || 10)
     }
   }
 }
