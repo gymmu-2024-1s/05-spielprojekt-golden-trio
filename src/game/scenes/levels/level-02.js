@@ -50,6 +50,7 @@ export default class Level02 extends Base2DScene {
       //this.player.addKey("level-02")
       this.player.increaseSpeed(100)
       this.player.heal(item.props.restoreHp || 10)
+      this.player.updatepoint(item.props.points || 10)
       this.tweens.addCounter({
         from: 0.5,
         to: 1,
@@ -69,6 +70,7 @@ export default class Level02 extends Base2DScene {
       // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
       this.player.damage(item.props.damageHp || 10)
+      this.player.updateminuspoint(item.props.minuspoints || 10)
 
       // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
       // passieren soll.
@@ -90,6 +92,13 @@ export default class Level02 extends Base2DScene {
       this.player.addKey("level-03")
     }
     if (item instanceof FlowerWhite) {
+      this.player.updatepoint(item.props.points || 10)
+    }
+
+    if (item instanceof Flower) {
+      this.player.updatepoint(item.props.points || 10)
+    }
+    if (item instanceof Mushroom) {
       this.player.updatepoint(item.props.points || 10)
     }
   }

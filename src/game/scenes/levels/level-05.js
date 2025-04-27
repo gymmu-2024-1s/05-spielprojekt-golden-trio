@@ -4,6 +4,7 @@ import Flowerpurple from "../../gameObjects/pickups/flowerpurple"
 import Mushroom from "../../gameObjects/pickups/mushroom"
 import Sunflower from "../../gameObjects/pickups/sunflower"
 import key from "../../gameObjects/pickups/key"
+import FlowerWhite from "../../gameObjects/pickups/flowerwhite"
 
 /**
  * Spiellogik für das Level05.
@@ -47,6 +48,8 @@ export default class Level05 extends Base2DScene {
       //this.player.addKey("level-02")
       this.player.increaseSpeed(100)
       this.player.heal(item.props.restoreHp || 10)
+      this.player.updatepoint(item.props.points || 10)
+      this.player.updateminuspoint(item.props.minuspoints || 10)
       this.tweens.addCounter({
         from: 0.5,
         to: 1,
@@ -84,6 +87,16 @@ export default class Level05 extends Base2DScene {
     }
     if (item instanceof key) {
       this.player.addKey("gamecomplete")
+    }
+    if (item instanceof FlowerWhite) {
+      this.player.updatepoint(item.props.points || 10)
+    }
+
+    if (item instanceof Flower) {
+      this.player.updatepoint(item.props.points || 10)
+    }
+    if (item instanceof Mushroom) {
+      this.player.updatepoint(item.props.points || 10)
     }
   }
 }

@@ -49,6 +49,12 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     setPointsGlobal(this.points)
     EVENTS.emit("update-points", this.points)
   }
+  updateminuspoint(value) {
+    if (value == null) value = 0
+    this.points = this.points - value
+    setPointsGlobal(this.points)
+    EVENTS.emit("update-points", this.points)
+  }
 
   /**
    * Heile den Spieler.
