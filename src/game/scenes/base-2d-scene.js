@@ -4,6 +4,10 @@ import Flower from "../gameObjects/pickups/flower"
 import Cave from "../gameObjects/doors/cave"
 import Player from "../gameObjects/player/player"
 import NPC from "../gameObjects/player/npc"
+import Flowerpurple from "../gameObjects/pickups/flowerpurple"
+import FlowerWhite from "../gameObjects/pickups/flowerwhite"
+import Sunflower from "../gameObjects/pickups/sunflower"
+import key from "../gameObjects/pickups/key"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
@@ -55,6 +59,7 @@ export default class Base2DScene extends Phaser.Scene {
 
     // Wird verwendet um weitere Spielinformationen an den Entwickler zu geben.
     this.scene.bringToTop("debug-scene")
+    this.scene.bringToTop("points-scene")
   }
 
   /**
@@ -100,6 +105,22 @@ export default class Base2DScene extends Phaser.Scene {
   createMapObjects() {
     this.createObjects(this.map, "Items", "Mushroom", Mushroom, this.items)
     this.createObjects(this.map, "Items", "Flower", Flower, this.items)
+    this.createObjects(
+      this.map,
+      "Items",
+      "FlowerPurple",
+      Flowerpurple,
+      this.items,
+    )
+    this.createObjects(
+      this.map,
+      "Items",
+      "FlowerWhite",
+      FlowerWhite,
+      this.items,
+    )
+    this.createObjects(this.map, "Items", "Sunflower", Sunflower, this.items)
+    this.createObjects(this.map, "Items", "Key", key, this.items)
   }
 
   createCamera() {
