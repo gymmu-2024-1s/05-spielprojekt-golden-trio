@@ -7,6 +7,7 @@
     <link
       rel="stylesheet"
       href="/node_modules/reveal.js/dist/theme/dracula.css" />
+    <link rel="stylesheet" href="css/pres.css" />
   </head>
 
   <body>
@@ -14,31 +15,84 @@
       <div class="slides">
         <!-- Dieser Abschnitt stellt eine Folie in Reveal.js dar -->
         <section>
-          <h1>Demo Spiel</h1>
+          <h1>Easter Hunt</h1>
           <!-- Mit der Klasse fragment, werden Teile erst nach und nach eingeblendet.-->
-          <p class="fragment">Cedric Geissmann</p>
+          <p class="fragment">by Javiera, Lilly, Esma und Ainoa</p>
         </section>
 
         <section>
-          <h3>Spielprinzip</h3>
+          <h3>Easter Hunt</h3>
           <!-- Wenn sections verschachtelt sind, werden damit Unterfolien erstellt.-->
           <section>
-            <h4>Jump'n'Run</h4>
-            <ul>
-              <li>Bis zum Ende des Levels kommen</li>
-              <li>Pilze machen Schaden</li>
-              <li>Blumen geben Lebenspunkte</li>
-            </ul>
+            <h4>Idee und RPG</h4>
+            <div class="columns">
+              <div>
+                <img src="/img/imagen.png" alt="" />
+              </div>
+
+              <ul>
+                <li>Inspiriert vom Osterthema</li>
+                <li>Sammelobjekte</li>
+                <li>Schlüssel finden und erreiche das Ende des Levels</li>
+              </ul>
+            </div>
           </section>
 
           <!-- Das hier ist dann die zweite Folie unter dem gleichen Titel.-->
           <section>
-            <h4>RPG</h4>
+            <h4>Charakter- und Objektdesign</h4>
+            <div class="columns">
+              <div>
+                <img src="/img/design.png" alt="" />
+              </div>
             <ul>
-              <li>Pilze machen Schaden</li>
-              <li>Blumen geben Lebenspunkte</li>
-              <li>Man muss eine Blume sammeln um das Spiel zu beenden</li>
-              <li>Höhle am Ende des Levels betreten</li>
+              <li>LibreSprite</li>
+              <li>Blumen und Ostereier</li>
+              <li>Osterhase</li>
+            </ul>
+            <div>
+                <img src="/img/tileset.png" alt="" />
+              </div>
+          </section>
+
+          <section>
+            <h4>Design von Haupseite und Gameseite</h4>
+            <div class="columns">
+            <div>
+                <img src="/img/startseite.png" alt="" />
+              </div>
+            <ul>
+              <li>Beschreibung des Spiels</li>
+              <li>Dekorationen mit css </li>
+              <li>Tiled und Maps</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+            <h4>Programmierung</h4>
+            <div class="columns">
+            <div>
+                <img src="/img/blumen.png" alt="" />
+              </div>
+            <ul>
+              <li>Efekte bei Blumen</li>
+              <li>"OnComplete"</li>
+              <li>Schlüssel</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+            <h4>Programmierung pt.2 </h4>
+            <div class="columns">
+            <div>
+                <img src="/img/punkte.png" alt="" />
+              </div>
+            <ul>
+              <li>HP-System</li>
+              <li>Punkte-System</li>
+              <li>Globale Variable</li>
             </ul>
           </section>
         </section>
@@ -46,6 +100,11 @@
         <!-- Die letzte Folie soll einen direkten Link zum Spiel sein. -->
         <section>
           <a href="game.html" target="_blank">Demo</a>
+          <li>
+            <a href="http://localhost:5173/phaser-playground/game.html"
+              >Easter Hunt</a
+            >
+          </li>
         </section>
       </div>
     </div>

@@ -1,48 +1,25 @@
 import Flower from "../../gameObjects/pickups/flower"
+import Flowerpurple from "../../gameObjects/pickups/flowerpurple"
 import Mushroom from "../../gameObjects/pickups/mushroom"
+import Sunflower from "../../gameObjects/pickups/sunflower"
 import Base2DScene from "../base-2d-scene"
+import key from "../../gameObjects/pickups/key"
+import FlowerWhite from "../../gameObjects/pickups/flowerwhite"
 
-/**
- * Spiellogik für das Level01.
- */
 export default class Level01 extends Base2DScene {
-  /**
-   * Der Konstuktor wird von Phaser verwendet um die Szene zu erstellen.
-   */
   constructor() {
-    // Damit rufen wir den Konstruktor von `Base2DScene` auf, und können
-    // Optionen an die Szene übergeben. Das brauchen wir damit Phaser einen
-    // Namen/Schlüssel für die Szene hat. Damit können wir später die Szene
-    // wechseln, wenn wir das brauchen.
     super({ key: "level-01" })
   }
 
-  /**
-   * Hier werden alle Resourcen geladen, die spezifisch für dieses Level / diese
-   * Szene benötigt werden.
-   */
   preload() {
-    // Lade die Karte für das aktuelle Level. Der erste Parameter ist der Name
-    // unter dem die Karte gespeichert wird. Der zweite Parameter ist die
-    // Kartendatei mit allen Daten drin.
     this.load.tilemapTiledJSON(
       "map-level-01",
       "./assets/maps/map-level-01.json",
     )
   }
 
-  /**
-   * Mit der Methode werden alle Spielobjekte für eine Szene erstellt.
-   */
   create() {
-    // Wir müssen hier die `create`-Methode der Klasse `Base2DScene` aufrufen,
-    // denn dort ist bereits beschrieben wie die Spielwelt nach der Kartendatei
-    // erstellt werden muss.
     super.create("map-level-01")
-
-    // TODO: Möchten wir zusätzliche Layers von der Karte ertellen lassen, oder
-    // spezifische Spielobjekte erstellen, dann können wir das hier machen.
-    // Besser wäre aber die jeweiligen Methoden zu überschreiben.
   }
 
   /**
@@ -63,15 +40,32 @@ export default class Level01 extends Base2DScene {
     // TODO: Hier wird die Logik für Kollisionen von Spielobjekten geändert. Das
     // ist pro Level anders. Wenn eine Logik für alle Levels gelten soll, dann
     // muss dies in `Base2DScene` angepasst werden.
-    if (item instanceof Flower) {
+    if (item instanceof Sunflower) {
       // Das Objekt ist von der Klasse `Flower`
-      this.player.addKey("level-02")
+      //this.player.addKey("level-02")
       this.player.increaseSpeed(100)
-      this.player.heal(item.props.restoreHp || 0)
-    } else if (item instanceof Mushroom) {
+      this.player.heal(item.props.restoreHp || 10)
+      this.player.updatepoint(item.props.points || 10)
+      this.tweens.addCounter({
+        from: 0.5,
+        to: 1,
+        ease: "Linear",
+        duration: 3000,
+        repeat: 0,
+        onUpdate: (tween) => {
+          // const val = tween.getValue()
+          //this.player.setScale(val)
+        },
+        onComplete: () => {
+          this.player.decreaseSpeed(100)
+        },
+      })
+    }
+    if (item instanceof Flowerpurple) {
       // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
-      this.player.damage(item.props.damageHp || 0)
+      this.player.damage(item.props.damageHp || 10) //
+      this.player.updateminuspoint(item.props.minuspoints || 10)
 
       // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
       // passieren soll.
@@ -88,6 +82,20 @@ export default class Level01 extends Base2DScene {
       //     this.player.setScale(val)
       //   },
       // })
+    }
+    if (item instanceof key) {
+      this.player.addKey("level-02")
+    }
+
+    if (item instanceof FlowerWhite) {
+      this.player.updatepoint(item.props.points || 10)
+    }
+
+    if (item instanceof Flower) {
+      this.player.updatepoint(item.props.points || 10)
+    }
+    if (item instanceof Mushroom) {
+      this.player.updatepoint(item.props.points || 10)
     }
   }
 }
